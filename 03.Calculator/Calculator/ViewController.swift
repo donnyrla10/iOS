@@ -52,6 +52,21 @@ class ViewController: UIViewController {
         self.numberOutputLabel.text = "0"
     }
     
+    @IBAction func tabSignButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func tabPercentageButton(_ sender: UIButton) {
+        if !self.displayNumber.isEmpty{
+            guard let number = Double(self.displayNumber) else {return}
+            self.result = "\(number * 0.01)"
+            if let result = Double(self.result), result.truncatingRemainder(dividingBy: 1) == 0 {
+                self.result = "\(Int(result))"
+            }
+            self.numberOutputLabel.text = self.result
+        }
+    }
+    
+    
     @IBAction func tabDotButton(_ sender: UIButton) {
         //숫자를 8자리까지 입력하고 소수점을 선택하고 또 숫자를 선택하게 되면 소수점포함 10자리가 표시되기 때문에
         //소수점 포함 9자리까지 표시되도록 예외 처리
