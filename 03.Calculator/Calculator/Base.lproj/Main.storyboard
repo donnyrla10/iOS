@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbK-Fw-iWS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="mbK-Fw-iWS">
                                 <rect key="frame" x="24" y="174" width="366" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="8NP-hB-Dqi"/>
@@ -48,7 +48,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="tabClearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wet-5O-HWO"/>
+                                                            <action selector="touchClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qoC-Wn-gcU"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0r-M9-eCm" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
@@ -65,7 +65,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="tabSignButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f3a-Tn-p3P"/>
+                                                            <action selector="touchOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rey-Mo-pHc"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uM6-F9-yJJ" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
@@ -82,7 +82,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="tabPercentageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M0n-ze-msz"/>
+                                                            <action selector="touchOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nyd-gd-dIh"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHY-Oa-fOc" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
@@ -99,7 +99,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="tabDivideButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vkz-57-8Cf"/>
+                                                            <action selector="touchOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xt6-vM-Cja"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -121,7 +121,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="tabNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JmJ-ZM-7GP"/>
+                                                            <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zaW-uo-3GC"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFa-ZC-boo" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
@@ -138,7 +138,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="tabNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UPW-V9-6op"/>
+                                                            <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wad-tE-3C4"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWV-AF-DpU" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
@@ -155,7 +155,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="tabNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MrP-so-hpF"/>
+                                                            <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wdz-96-l9b"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDN-9t-bCP" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
@@ -172,7 +172,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="tabMultiplyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f6q-iY-APp"/>
+                                                            <action selector="touchOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j67-AA-UEQ"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -194,7 +194,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="tabNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5RL-9K-bhR"/>
+                                                            <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f2X-cr-eew"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ShG-5q-isC" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
@@ -211,7 +211,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="tabNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="adj-io-GRV"/>
+                                                            <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HkB-q1-T38"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UW9-Xy-6Ey" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
@@ -228,7 +228,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="tabNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qXk-EJ-R6f"/>
+                                                            <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C9K-AH-Ili"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOo-ea-SvL" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
@@ -245,7 +245,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="tabSubstractButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rKU-E0-fR6"/>
+                                                            <action selector="touchOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iaq-B5-xB0"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -267,7 +267,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="tabNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bVM-PT-BYy"/>
+                                                            <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WQb-aL-kdn"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DI3-iO-Y0B" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
@@ -284,7 +284,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="tabNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8fI-hJ-U3Z"/>
+                                                            <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fxo-jz-SV5"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wP-ic-LvP" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
@@ -301,7 +301,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="tabNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UVY-We-x7F"/>
+                                                            <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N31-jT-Z0N"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed0-On-AU1" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
@@ -318,7 +318,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="tabAddButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7iU-7k-ibd"/>
+                                                            <action selector="touchOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8vF-8Q-alY"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -337,7 +337,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="tabNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0bg-Pz-ANE"/>
+                                                            <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vat-WJ-FrM"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRm-Hw-19R" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
@@ -354,7 +354,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="tabDotButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LwE-HC-BQs"/>
+                                                            <action selector="touchDot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BFj-e7-pEz"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJP-Hk-XZX" customClass="RoundButton" customModule="Calculator" customModuleProvider="target">
@@ -371,7 +371,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="tabEqualButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i3R-23-zju"/>
+                                                            <action selector="touchOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ba-9O-yK5"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -408,7 +408,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="numberOutputLabel" destination="mbK-Fw-iWS" id="Qe3-VD-XWm"/>
+                        <outlet property="display" destination="mbK-Fw-iWS" id="cmP-xv-HyB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
